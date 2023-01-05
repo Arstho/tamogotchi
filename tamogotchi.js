@@ -19,21 +19,21 @@ const tamogotchi = {
     },
     eat() {
         if (this.meal < 5) {
-            this.meal + 1;
+        return this.meal += 1;
         }
-        return this.mood - 1;
+        return this.mood -= 1;
     },
     sleep() {
         if (this.energy < 5) {
-            return this.energy + 1;
+            return this.energy += 1;
         }
-        return this.meal - 1;
+        return this.meal -= 1;
     },
     play() {
         if (this.mood < 5) {
-            return this.mood + 1;
+            return this.mood += 1;
         }
-        return this.energy - 1;
+        return this.energy -= 1;
     }
 };
 tamogotchi.setName('Jamic')
